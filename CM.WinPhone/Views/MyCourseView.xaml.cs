@@ -7,12 +7,13 @@ using System.Windows.Controls;
 using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
+using Cirrious.MvvmCross.WindowsPhone.Views;
 
 namespace CM.WinPhone.Views
 {
-    public partial class TeacherList : PhoneApplicationPage
+    public partial class MyCourseView : MvxPhonePage
     {
-        public TeacherList()
+        public MyCourseView()
         {
             InitializeComponent();
         }

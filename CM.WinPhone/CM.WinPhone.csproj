@@ -108,8 +108,11 @@
     <Compile Include="Views\FirstView.xaml.cs">
       <DependentUpon>FirstView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\TeacherList.xaml.cs">
-      <DependentUpon>TeacherList.xaml</DependentUpon>
+    <Compile Include="Views\MyCourseView.xaml.cs">
+      <DependentUpon>MyCourseView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\TeacherListView.xaml.cs">
+      <DependentUpon>TeacherListView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -125,7 +128,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\TeacherList.xaml">
+    <Page Include="Views\MyCourseView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\TeacherListView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -142,6 +149,9 @@
     <Content Include="Assets\ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\Book.png" />
+    <Content Include="Assets\Business-Man-01.png" />
+    <Content Include="Assets\Command-Undo.png" />
     <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
