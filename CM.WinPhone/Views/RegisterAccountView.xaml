@@ -23,11 +23,20 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="MY APPLICATION" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="Register Account" FontSize="30" TextAlignment="Center" Style="{StaticResource PhoneTextNormalStyle}"/>
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+        <Grid x:Name="ContentPanel" Margin="0,77,24,8" Grid.RowSpan="2">
+            <Button Content="Register" HorizontalAlignment="Left" Margin="185,405,0,0" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Left" Margin="15,78,0,0" TextWrapping="Wrap" Text="UserName" VerticalAlignment="Top" Height="45" Width="115"/>
+            <TextBox HorizontalAlignment="Left" Height="70" Margin="135,65,0,0" TextWrapping="Wrap" Name="txtUserName" Text="{Binding UserName}" VerticalAlignment="Top" Width="316"/>
+            <TextBlock HorizontalAlignment="Left" Margin="14,156,0,0" TextWrapping="Wrap" Text="FullName" VerticalAlignment="Top" Height="45" Width="115"/>
+            <TextBox HorizontalAlignment="Left" Height="70" Margin="134,143,0,0" TextWrapping="Wrap" Name="txtFullName" Text="{Binding FullName}" VerticalAlignment="Top" Width="316"/>
+            <TextBlock HorizontalAlignment="Left" Margin="14,236,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Height="45" Width="115"/>
+            <TextBox HorizontalAlignment="Left" Height="70" Margin="134,223,0,0" TextWrapping="Wrap" Text="{Binding Email}" VerticalAlignment="Top" Width="316"/>
+            <TextBlock HorizontalAlignment="Left" Margin="10,321,0,0" TextWrapping="Wrap" Text="Phone" VerticalAlignment="Top" Height="45" Width="115"/>
+            <TextBox HorizontalAlignment="Left" Height="70" Margin="130,308,0,0" TextWrapping="Wrap" Text="{Binding PhoneNumber}" VerticalAlignment="Top" Width="316"/>
 
         </Grid>
     </Grid>
