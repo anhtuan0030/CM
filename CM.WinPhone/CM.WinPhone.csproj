@@ -108,8 +108,20 @@
     <Compile Include="Views\FirstView.xaml.cs">
       <DependentUpon>FirstView.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\loginView.xaml.cs">
+      <DependentUpon>loginView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\MyCourseView.xaml.cs">
       <DependentUpon>MyCourseView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RegisterAccountView.xaml.cs">
+      <DependentUpon>RegisterAccountView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\RegisterCourseView.xaml.cs">
+      <DependentUpon>RegisterCourseView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\StudentInfoView.xaml.cs">
+      <DependentUpon>StudentInfoView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\TeacherListView.xaml.cs">
       <DependentUpon>TeacherListView.xaml</DependentUpon>
@@ -128,7 +140,23 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Views\loginView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\MyCourseView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\RegisterAccountView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\RegisterCourseView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\StudentInfoView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -152,6 +180,7 @@
     <Content Include="Assets\Book.png" />
     <Content Include="Assets\Business-Man-01.png" />
     <Content Include="Assets\Command-Undo.png" />
+    <Content Include="Assets\Login-01.png" />
     <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -167,6 +196,7 @@
     <Content Include="Assets\Tiles\IconicTileSmall.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\User-Login.png" />
     <Content Include="ToDo-MvvmCross\_ Windows Phone UI.txt" />
   </ItemGroup>
   <ItemGroup>

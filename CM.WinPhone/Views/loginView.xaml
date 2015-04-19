@@ -1,0 +1,45 @@
+﻿<views:MvxPhonePage
+    x:Class="CM.WinPhone.Views.loginView"
+     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+   xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:views="clr-namespace:Cirrious.MvvmCross.WindowsPhone.Views;assembly=Cirrious.MvvmCross.WindowsPhone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28"/>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="10,2,14,-2">
+            <TextBlock TextAlignment="Center" HorizontalAlignment="Left" Margin="45,148,0,0" TextWrapping="Wrap" Text="Managerment Course" VerticalAlignment="Top" Height="50" Width="370" Style="{StaticResource LongListSelectorGroupHeaderStyle}"/>
+            <Image Source="/Assets/User-login.png" HorizontalAlignment="Left" Height="55" Margin="46,255,0,0" VerticalAlignment="Top" Width="50" RenderTransformOrigin="0,0.714"/>
+            <Image Source="/Assets/Login-01.png" HorizontalAlignment="Left" Height="45" Margin="46,335,0,0" VerticalAlignment="Top" Width="45" RenderTransformOrigin="0,0.714"/>
+            <TextBox Name="txtUserName" HorizontalAlignment="Left" Height="70" Margin="91,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="325"/>
+            <PasswordBox Name="txtPassword" HorizontalAlignment="Left" Margin="91,323,0,0" VerticalAlignment="Top" Width="325" Height="67"/>
+            <Button Background="CornflowerBlue" Content="Login&#xD;&#xA;" HorizontalAlignment="Left" Margin="30.002,399.988,0,0" VerticalAlignment="Top" Width="385.998" Height="70" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                <Button.RenderTransform>
+                    <CompositeTransform Rotation="-0.014"/>
+                </Button.RenderTransform>
+            </Button>
+            <Button Content="Register" HorizontalAlignment="Left" Margin="30,471,0,0" VerticalAlignment="Top" Width="175"/>
+            <Button Content="Forget Password" HorizontalAlignment="Left" Margin="190,471,0,0" VerticalAlignment="Top" Width="225"/>
+
+        </Grid>
+    </Grid>
+
+</views:MvxPhonePage>
