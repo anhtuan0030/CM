@@ -11,7 +11,7 @@ namespace CM.Core
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
 				
-            RegisterAppStart<ViewModels.FirstViewModel>();
+            RegisterAppStart<ViewModels.TeacherViewModel>();
         }
     }
 }

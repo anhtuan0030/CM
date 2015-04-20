@@ -1,4 +1,5 @@
 ﻿using Cirrious.MvvmCross.ViewModels;
+using CM.Core.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,14 @@ namespace CM.Core.ViewModels
 {
     public class TeacherViewModel : MvxViewModel
     {
+        private readonly ITeacherService _tearcher;
+        private readonly MvxCommand _command;
+        public TeacherViewModel(ITeacherService teacher)
+        {
+            _tearcher = teacher;
+            
+        }
+
         private string _teacherId = string.Empty;
         public string TeacherId
         {
@@ -58,4 +67,5 @@ namespace CM.Core.ViewModels
             set { _description = value; RaisePropertyChanged(() => Description); }
         }
     }
+
 }

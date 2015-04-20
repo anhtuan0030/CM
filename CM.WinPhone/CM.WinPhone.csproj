@@ -123,8 +123,8 @@
     <Compile Include="Views\StudentInfoView.xaml.cs">
       <DependentUpon>StudentInfoView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\TeacherListView.xaml.cs">
-      <DependentUpon>TeacherListView.xaml</DependentUpon>
+    <Compile Include="Views\TeacherView.xaml.cs">
+      <DependentUpon>TeacherView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -160,7 +160,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\TeacherListView.xaml">
+    <Page Include="Views\TeacherView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
