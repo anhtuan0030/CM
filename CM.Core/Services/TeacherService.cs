@@ -26,7 +26,7 @@ namespace CM.Core.Services
         }
 
 
-        public async Task<Teachers> SelectTeacherByKey(decimal? id)
+        public async Task<Teachers> SelectTeacherByKey(int id)
         //public ViewModels.TeacherViewModel SelectTeacherByKey(decimal? id)
         {
             //throw new NotImplementedException();
@@ -34,8 +34,8 @@ namespace CM.Core.Services
                          where teacher.TeacherId == id
                          select teacher;
 
-            var result = await query3.FindAsync();
-            return result.ToList()[0];
+            var result = await query3.FirstOrDefaultAsync();
+            return result;
         }
 
         public async Task<IEnumerable<Teachers>> GetTeachers()

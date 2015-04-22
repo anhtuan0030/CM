@@ -77,7 +77,7 @@
                      Grid.Row="1"
                      
                      ItemTemplate="{StaticResource templateTeachers}"
-                     ItemsSource="{Binding ListData}" />
+                     ItemsSource="{Binding ListData}" SelectionChanged="teacherListBox_SelectionChanged" />
         </Grid>
 
     </Grid>

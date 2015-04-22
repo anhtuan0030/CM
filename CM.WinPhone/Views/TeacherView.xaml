@@ -24,9 +24,7 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <ListBox x:Name="teacherListBox"
-                     Grid.Row="1"
-                     ItemsSource="{Binding ViewCV}" />
+       
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
             <TextBlock Text="Teacher CV" TextAlignment="Left" FontSize="30" Style="{StaticResource PhoneTextTitle2Style}" Foreground="#FF54EFDE" FontWeight="Bold"/>

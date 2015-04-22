@@ -30,5 +30,10 @@ namespace CM.Core.ViewModels
             get { return _listData; }
             set { _listData = value; RaisePropertyChanged(() => ListData); }
         }
+
+        public void ShowTeacherDetail(int id)
+        {
+            ShowViewModel<TeacherViewModel>(new { TeacherId = id });
+        }
     }
 }
