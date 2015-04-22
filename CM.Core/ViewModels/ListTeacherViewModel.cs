@@ -15,7 +15,6 @@ namespace CM.Core.ViewModels
         public ListTeacherViewModel(ITeacherService teacherService)
         {
             _teacherService = teacherService;
-
         }
 
         public async void Init(string Username)
