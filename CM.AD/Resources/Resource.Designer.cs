@@ -90,11 +90,11 @@ namespace CM.AD
 			// aapt resource value: 0x7f040000
 			public const int MvxBindingTagUnique = 2130968576;
 			
-			// aapt resource value: 0x7f040002
-			public const int MyButton = 2130968578;
-			
 			// aapt resource value: 0x7f040001
 			public const int listViewTeacher = 2130968577;
+			
+			// aapt resource value: 0x7f040002
+			public const int textView1 = 2130968578;
 			
 			static Id()
 			{
@@ -119,10 +119,10 @@ namespace CM.AD
 			public const int ListTeacherView = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int Main = 2130903043;
+			public const int SplashScreen = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int SplashScreen = 2130903044;
+			public const int StudentView = 2130903044;
 			
 			static Layout()
 			{
