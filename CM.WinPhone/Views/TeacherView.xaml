@@ -32,12 +32,13 @@
 
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="5,2,19,-2">
-            <Image Source="{Binding ImagePath}" HorizontalAlignment="Left" Height="125" Margin="18,10,0,0" VerticalAlignment="Top" Width="125"/>
-            <TextBlock Text="{Binding FullName}" HorizontalAlignment="Left" Margin="175,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource PhoneTextAccentStyle}" Width="270" Height="32"/>
-            <TextBlock Text="{Binding Email}" HorizontalAlignment="Left" Height="35" Margin="15,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="425"/>
+            <Image Source="{Binding ImagePath}" HorizontalAlignment="Left" Height="250" Margin="18,10,0,0" VerticalAlignment="Top" Width="160"/>
+            <TextBlock Text="{Binding FullName}" HorizontalAlignment="Left" Margin="185,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource PhoneTextAccentStyle}" Width="270" Height="32"/>
+            <TextBlock Text="{Binding Subject}" HorizontalAlignment="Left" Height="35" Margin="185,120,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="270"/>
+            <TextBlock Text="{Binding Email}" HorizontalAlignment="Left" Height="35" Margin="15,275,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="425"/>
             <TextBlock Text="{Binding PhoneNumber}" HorizontalAlignment="Left" Height="35" Margin="15,243,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="420"/>
-            <TextBlock Text="{Binding Subject}" HorizontalAlignment="Left" Height="35" Margin="20,328,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="420"/>
-            <TextBlock Text="{Binding Description}" HorizontalAlignment="Left" Height="35" Margin="20,413,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="420"/>
+            
+            <TextBlock Text="{Binding Description}" HorizontalAlignment="Left" Height="35" Margin="20,313,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="420"/>
 
         </Grid>
     </Grid>
