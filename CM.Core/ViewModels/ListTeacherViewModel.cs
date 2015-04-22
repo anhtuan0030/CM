@@ -15,7 +15,6 @@ namespace CM.Core.ViewModels
         public ListTeacherViewModel(ITeacherService teacherService)
         {
             _teacherService = teacherService;
-
         }
 
         public async void Init(string Username)
@@ -30,5 +29,23 @@ namespace CM.Core.ViewModels
             get { return _listData; }
             set { _listData = value; RaisePropertyChanged(() => ListData); }
         }
+
+
+        MvxCommand _viewDetailTeacher;
+        public System.Windows.Input.ICommand ViewDetailTeacher
+        {
+            get
+            {
+                _viewDetailTeacher = _viewDetailTeacher ?? new MvxCommand(DoViewDetailTeacher);
+                return _viewDetailTeacher;
+            }
+        }
+
+        private void DoViewDetailTeacher()
+        {
+            //TeacherViewModel t = _teacherService.SelectTeacherByKey(1);
+            ShowViewModel<TeacherViewModel>();
+        }
+
     }
 }
