@@ -57,6 +57,7 @@ namespace CM.Core.Services
         //}
     }
 
+    [ParseClassName("Student")]
     public class Student : ParseObject
     {
 
