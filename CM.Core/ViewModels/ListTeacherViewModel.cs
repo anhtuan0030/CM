@@ -34,5 +34,16 @@ namespace CM.Core.ViewModels
         {
             ShowViewModel<TeacherViewModel>(new { TeacherId = id });
         }
+
+        //--------------Student info---------------------------------
+
+        public void ShowStudentDetail(string username)
+        {
+            ShowViewModel<StudentViewModel>(new { UserName = username });
+        }
+        public void GotoLogin()
+        {
+            ShowViewModel<LoginViewModel>();
+        }
     }
 }

@@ -18,6 +18,8 @@ namespace CM.Core.ViewModels
             
         }
 
+
+
         public async void Init(int TeacherId)
         {
             //var result = await _teacherService.GetTeachers();
@@ -30,6 +32,9 @@ namespace CM.Core.ViewModels
             PhoneNumber = result.PhoneNumber;
             Description = result.Description;
         }
+
+
+
 
         private int _teacherId ;
         public int TeacherId
@@ -79,6 +84,10 @@ namespace CM.Core.ViewModels
             get { return _description; }
             set { _description = value; RaisePropertyChanged(() => Description); }
         }
+
+
+
+      
     }
 
 }

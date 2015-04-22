@@ -111,8 +111,8 @@
     <Compile Include="Views\ListTeacherView.xaml.cs">
       <DependentUpon>ListTeacherView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\loginView.xaml.cs">
-      <DependentUpon>loginView.xaml</DependentUpon>
+    <Compile Include="Views\LoginView.xaml.cs">
+      <DependentUpon>LoginView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\MyCourseView.xaml.cs">
       <DependentUpon>MyCourseView.xaml</DependentUpon>
@@ -123,8 +123,8 @@
     <Compile Include="Views\RegisterCourseView.xaml.cs">
       <DependentUpon>RegisterCourseView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\StudentInfoView.xaml.cs">
-      <DependentUpon>StudentInfoView.xaml</DependentUpon>
+    <Compile Include="Views\StudentView.xaml.cs">
+      <DependentUpon>StudentView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\TeacherView.xaml.cs">
       <DependentUpon>TeacherView.xaml</DependentUpon>
@@ -147,7 +147,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\loginView.xaml">
+    <Page Include="Views\LoginView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -163,9 +163,9 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Views\StudentInfoView.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="Views\StudentView.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\TeacherView.xaml">
       <SubType>Designer</SubType>
@@ -189,6 +189,7 @@
     <Content Include="Assets\Business-Man-01.png" />
     <Content Include="Assets\Command-Undo.png" />
     <Content Include="Assets\Login-01.png" />
+    <Content Include="Assets\Login-Door.png" />
     <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

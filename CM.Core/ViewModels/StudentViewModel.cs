@@ -1,4 +1,5 @@
 ﻿using Cirrious.MvvmCross.ViewModels;
+using CM.Core.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,27 @@ namespace CM.Core.ViewModels
 {
     public class StudentViewModel : MvxViewModel
     {
+        private readonly IStudentService _studentSrv;
+        private readonly MvxCommand _command;
+        public StudentViewModel(IStudentService serviceSrv)
+        {
+            _studentSrv = serviceSrv;
+
+        }
+        public async void Init(string userName)
+        {
+
+            //var result = await _teacherService.GetTeachers();
+            var result = await _studentSrv.GetByUserName(userName);
+            StudentId = result.StudentId;
+            FullName = result.FullName;
+            Password = result.Password;
+            ImagePath = result.ImagePath;
+            Email = result.Email;
+            PhoneNumber = result.PhoneNumber;
+            Description = result.Description;
+        }
+
         private int _studentId;
         public int StudentId
         {

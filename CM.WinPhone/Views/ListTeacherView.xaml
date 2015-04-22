@@ -14,26 +14,7 @@
                     SupportedOrientations="Portrait"
                     shell:SystemTray.IsVisible="True"
                     mc:Ignorable="d">
-    <!--<views:MvxPhonePage.Resources>
-
-        <DataTemplate x:Key="templateTeachers">
-            <Grid Margin="6">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="100" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                <Image Grid.Column="0" Source="{Binding ImagePath}" />
-                <StackPanel Grid.Column="1" Margin="12">
-                    <TextBox FontSize="40" Text="{Binding Fullname, Mode=OneWay}"/>
-                    --><!--<TextBox FontSize="24" Text="{Binding Email, Mode=OneWay}" />--><!--
-                    <TextBox FontSize="24" Text="{Binding Subject, Mode=OneWay}" />
-                    --><!--<TextBox FontSize="24" Text="{Binding PhoneNumber, Mode=OneWay}" />
-                    <TextBox FontSize="24" Text="{Binding Description, Mode=OneWay}" />--><!--
-                </StackPanel>
-            </Grid>
-
-        </DataTemplate>
-    </views:MvxPhonePage.Resources>-->
+   
     <views:MvxPhonePage.Resources>
         <DataTemplate x:Key="templateTeachers">
             <Grid Margin="6">
@@ -63,7 +44,7 @@
 
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="Chose Teacher" TextAlignment="Left"   FontSize="30" Style="{StaticResource PhoneTextTitle2Style}" Foreground="#FF54EFDE" FontWeight="Bold"/>
+            <TextBlock Text="Danh sách giáo viên" TextAlignment="Left"   FontSize="30" Style="{StaticResource PhoneTextTitle2Style}" Foreground="#FF54EFDE" FontWeight="Bold"/>
         </StackPanel>
 
 
@@ -84,10 +65,12 @@
 
     <phone:PhoneApplicationPage.ApplicationBar>
         <shell:ApplicationBar IsVisible="True" IsMenuEnabled="False">
-            <shell:ApplicationBarIconButton IconUri="/Assets/Command-Undo.png" Text="Back"/>
-            <shell:ApplicationBarIconButton IconUri="/Assets/Business-Man-01.png" Text="My Info" />
+            <shell:ApplicationBarIconButton IconUri="/Assets/Login-Door.png" Text="Back" Click="IntoLogin_Click"/>
+            <shell:ApplicationBarIconButton IconUri="/Assets/Business-Man-01.png" Text="My Info" Click="MyInfo_Click" />
             <shell:ApplicationBarIconButton IconUri="/Assets/Book.png" Text="My Course" />
 
         </shell:ApplicationBar>
+        
     </phone:PhoneApplicationPage.ApplicationBar>
+    
 </views:MvxPhonePage>

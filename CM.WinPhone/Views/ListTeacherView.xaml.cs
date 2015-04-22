@@ -25,5 +25,20 @@ namespace CM.WinPhone.Views
             var id = ((Teachers)teacherListBox.SelectedItem).TeacherId;
                 ((ListTeacherViewModel)this.DataContext).ShowTeacherDetail(id);
         }
+
+
+
+     
+
+        private void MyInfo_Click(object sender, EventArgs e)
+        {
+            
+            ((ListTeacherViewModel)this.DataContext).ShowStudentDetail("ndlongphi");
+        }
+
+        private void IntoLogin_Click(object sender, EventArgs e)
+        {
+            ((ListTeacherViewModel)this.DataContext).GotoLogin();
+        }
     }
 }
