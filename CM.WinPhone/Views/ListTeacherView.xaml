@@ -56,7 +56,7 @@
             </Grid.RowDefinitions>
             <ListBox x:Name="teacherListBox"
                      Grid.Row="1"
-                     
+                      SelectionChanged="teacherListBox_SelectionChanged"
                      ItemTemplate="{StaticResource templateTeachers}"
                      ItemsSource="{Binding ListData}" />
         </Grid>

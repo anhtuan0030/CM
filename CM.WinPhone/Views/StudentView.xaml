@@ -38,7 +38,7 @@
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Margin="10,27,14,-27" Grid.Row="1">
 
-            <Image HorizontalAlignment="Left" Height="140" Margin="245,-102,0,0" VerticalAlignment="Top" Width="187" Source="{Binding ImagePath}"/>
+            <Image HorizontalAlignment="Left" Height="140" Margin="269,-108,0,0" VerticalAlignment="Top" Width="187" Source="{Binding ImagePath}" RenderTransformOrigin="0.786,0.529"/>
 
             <TextBox Text="{Binding FullName, Mode=TwoWay}" Height="65" Margin="119,59,6,0" TextWrapping="Wrap" VerticalAlignment="Top"/>
             <TextBlock HorizontalAlignment="Left" Margin="0,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource PhoneTextTitle3Style}" Width="160" Height="44" RenderTransformOrigin="0.206,0.622">
@@ -47,7 +47,7 @@
             	<Run/>
             </TextBlock>
             <TextBlock HorizontalAlignment="Left" Margin="10,206,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" RenderTransformOrigin="-0.183,0.556" Height="34" Width="105" Style="{StaticResource PhoneTextTitle3Style}"/>
-            <TextBox  Text="{Binding Email, Mode=TwoWay}" HorizontalAlignment="Left" Height="65" Margin="120,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="326"/>
+            <TextBox  Text="{Binding Password, Mode=TwoWay}" HorizontalAlignment="Left" Height="65" Margin="120,192,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="326"/>
             <TextBlock HorizontalAlignment="Left" Margin="10,418,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource PhoneTextTitle3Style}" Height="40" RenderTransformOrigin="0.775,2.625">
             	<Run Text="Subject"/>
             	<LineBreak/>
@@ -61,12 +61,12 @@
             	<LineBreak/>
             	<Run/>
             </TextBlock>
-            <TextBox Text="{Binding Phone , Mode=TwoWay}" HorizontalAlignment="Left" Height="65" Margin="122,335,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="324"/>
+            <TextBox Text="{Binding PhoneNumber , Mode=TwoWay}" HorizontalAlignment="Left" Height="65" Margin="122,335,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="324"/>
             <TextBox Text="{Binding Subject , Mode=TwoWay}"  HorizontalAlignment="Left" Height="65" Margin="121,403,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="330"/>
             <TextBox  Text="{Binding Description , Mode=TwoWay}" HorizontalAlignment="Left" Height="65" Margin="120,468,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="330"/>
             <TextBlock HorizontalAlignment="Left" Margin="10,350,0,0" TextWrapping="Wrap" Text="Phone" VerticalAlignment="Top" RenderTransformOrigin="-0.183,0.556" Height="34" Width="112" Style="{StaticResource PhoneTextTitle3Style}"/>
             <TextBlock HorizontalAlignment="Left" Margin="10,280,0,0" TextWrapping="Wrap" Text="Address&#x9;" VerticalAlignment="Top" RenderTransformOrigin="-0.183,0.556" Height="34" Width="112" Style="{StaticResource PhoneTextTitle3Style}"/>
-            <Button Content="Save&#xD;&#xA;" HorizontalAlignment="Left" Margin="155,543,0,0" VerticalAlignment="Top" Height="75" Width="150" />
+            <Button Content="Lưu" HorizontalAlignment="Left" Margin="155,543,0,0" VerticalAlignment="Top" Height="75" Width="150" />
             <TextBlock HorizontalAlignment="Left" Margin="27,141,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" RenderTransformOrigin="-0.183,0.556" Height="34" Width="87" Style="{StaticResource PhoneTextTitle3Style}"/>
             <TextBox  Text="{Binding Email, Mode=TwoWay}" HorizontalAlignment="Left" Height="65" Margin="119,127,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="327"/>
 

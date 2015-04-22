@@ -19,8 +19,7 @@ namespace CM.Core.ViewModels
         }
         public async void Init(string userName)
         {
-
-            //var result = await _teacherService.GetTeachers();
+           
             var result = await _studentSrv.GetByUserName(userName);
             StudentId = result.StudentId;
             FullName = result.FullName;

@@ -10,6 +10,6 @@ namespace CM.Core.Services
     public interface IStudentService
     {
         Task<Student> GetByUserName(string userName);
-       // void InsertItem();
+        void InsertItem();
     }
 }

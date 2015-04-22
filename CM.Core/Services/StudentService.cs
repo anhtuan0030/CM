@@ -24,6 +24,25 @@ namespace CM.Core.Services
 
         public Task<Student> GetByUserName(string userName)
         {
+            //Student objx = new Student
+            //{
+            //    FullName = "Nguyễn Đỗ Long Phi",
+            //    Description = "Test Insert student",
+            //    StudentId = 69,
+            //    UserName = "ndlongphi",
+            //    DOB = DateTime.Now,
+            //    ImagePath = "http://linkhay2.vcmedia.vn/thumbs/avatars/user_uploaded/SupperMen2_120.jpg",
+            //    PhoneNumber = "01688888888"
+            //};
+            //objx.SaveAsync();
+            var query3 = from student in new ParseQuery<Student>() where student.UserName == "ndlongphi" select student;
+
+            var result = query3.FirstAsync();
+            return result;
+        }
+
+        public void InsertItem()
+        {
             Student objx = new Student
             {
                 FullName = "Nguyễn Đỗ Long Phi",
@@ -35,28 +54,9 @@ namespace CM.Core.Services
                 PhoneNumber = "01688888888"
             };
             objx.SaveAsync();
-            var query3 = from student in new ParseQuery<Student>() where student.UserName == "ndlongphi" select student;
-
-            var result = query3.FirstAsync();
-            return result;
         }
-
-        //public void InsertItem()
-        //{
-        //    Student objx = new Student
-        //    {
-        //        FullName = "Nguyễn Đỗ Long Phi",
-        //        Description = "Test Insert student",
-        //        StudentId = 69,
-        //        UserName ="ndlongphi",
-        //        DOB = DateTime.Now,
-        //        ImagePath = "http://linkhay2.vcmedia.vn/thumbs/avatars/user_uploaded/SupperMen2_120.jpg",
-        //        PhoneNumber ="01688888888"
-        //    };
-        //    objx.SaveAsync();
-        //}
     }
-
+     [ParseClassName("Student")]
     public class Student : ParseObject
     {
 
