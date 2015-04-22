@@ -56,7 +56,8 @@ namespace CM.Core.Services
             objx.SaveAsync();
         }
     }
-     [ParseClassName("Student")]
+
+    [ParseClassName("Student")]
     public class Student : ParseObject
     {
 
