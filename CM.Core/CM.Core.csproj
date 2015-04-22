@@ -61,6 +61,12 @@
     <Reference Include="Cirrious.MvvmCross.Localization">
       <HintPath>..\packages\MvvmCross.HotTuna.CrossCore.3.5.1-beta1\lib\portable-win+net45+wp8+win8+wpa81\Cirrious.MvvmCross.Localization.dll</HintPath>
     </Reference>
+    <Reference Include="Parse">
+      <HintPath>..\..\..\Project\Xamarin\HaLH\TL.Core\packages\parse.1.4.1\lib\net45\Parse.dll</HintPath>
+    </Reference>
+    <Reference Include="Parse.NetFx45">
+      <HintPath>..\..\..\Project\Xamarin\HaLH\TL.Core\packages\parse.1.4.1\lib\net45\Parse.NetFx45.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Content Include="ToDo-MvvmCross\_ Core.txt" />
