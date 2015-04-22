@@ -11,5 +11,7 @@ namespace CM.Core.Services
     {
         List<TeacherViewModel> SelectListTeacher(TeacherViewModel ObjectSearch);
         TeacherViewModel SelectTeacherByKey(decimal? id);
+
+        Task<IEnumerable<Teachers>> GetTeachers();
     }
 }

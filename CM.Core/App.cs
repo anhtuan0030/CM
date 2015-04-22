@@ -13,11 +13,11 @@ namespace CM.Core
 				
 
 
-            RegisterAppStart<ViewModels.FirstViewModel>();
+            //RegisterAppStart<ViewModels.FirstViewModel>();
 
-            RegisterAppStart<ViewModels.TeacherViewModel>();
-            RegisterAppStart<ViewModels.StudentViewModel>();
-            RegisterAppStart<ViewModels.CourseViewModel>();
+            RegisterAppStart<ViewModels.ListTeacherViewModel>();
+            //RegisterAppStart<ViewModels.StudentViewModel>();
+            //RegisterAppStart<ViewModels.CourseViewModel>();
 
         }
     }
