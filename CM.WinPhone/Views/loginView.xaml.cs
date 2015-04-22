@@ -11,9 +11,9 @@ using Cirrious.MvvmCross.WindowsPhone.Views;
 
 namespace CM.WinPhone.Views
 {
-    public partial class loginView : MvxPhonePage
+    public partial class LoginView : MvxPhonePage
     {
-        public loginView()
+        public LoginView()
         {
             InitializeComponent();
         }

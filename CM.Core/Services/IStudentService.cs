@@ -9,9 +9,7 @@ namespace CM.Core.Services
 {
     public interface IStudentService
     {
-        List<StudentViewModel> SelectListStudent(StudentViewModel ObjectSearch);
-        StudentViewModel SelectByKey(decimal? id);
-        bool Insert(StudentViewModel ObjectData);
-        bool Update(StudentViewModel ObjectData);
+        Task<Student> GetByUserName(string userName);
+       // void InsertItem();
     }
 }

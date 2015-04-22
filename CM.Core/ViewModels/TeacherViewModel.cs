@@ -18,8 +18,26 @@ namespace CM.Core.ViewModels
             
         }
 
-        private string _teacherId = string.Empty;
-        public string TeacherId
+
+
+        public async void Init(int TeacherId)
+        {
+            //var result = await _teacherService.GetTeachers();
+            var result = await _tearcher.SelectTeacherByKey(TeacherId);
+            TeacherId = result.TeacherId;
+            FullName = result.Fullname;
+            Subject = result.Subject;
+            ImagePath = result.ImagePath;
+            Email = result.Email;
+            PhoneNumber = result.PhoneNumber;
+            Description = result.Description;
+        }
+
+
+
+
+        private int _teacherId ;
+        public int TeacherId
         {
             get { return _teacherId; }
             set { _teacherId = value; RaisePropertyChanged(() => TeacherId); }
@@ -66,6 +84,10 @@ namespace CM.Core.ViewModels
             get { return _description; }
             set { _description = value; RaisePropertyChanged(() => Description); }
         }
+
+
+
+      
     }
 
 }

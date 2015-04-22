@@ -30,22 +30,20 @@ namespace CM.Core.ViewModels
             set { _listData = value; RaisePropertyChanged(() => ListData); }
         }
 
-
-        MvxCommand _viewDetailTeacher;
-        public System.Windows.Input.ICommand ViewDetailTeacher
+        public void ShowTeacherDetail(int id)
         {
-            get
-            {
-                _viewDetailTeacher = _viewDetailTeacher ?? new MvxCommand(DoViewDetailTeacher);
-                return _viewDetailTeacher;
-            }
+            ShowViewModel<TeacherViewModel>(new { TeacherId = id });
         }
 
-        private void DoViewDetailTeacher()
-        {
-            //TeacherViewModel t = _teacherService.SelectTeacherByKey(1);
-            ShowViewModel<TeacherViewModel>();
-        }
+        //--------------Student info---------------------------------
 
+        public void ShowStudentDetail(string username)
+        {
+            ShowViewModel<StudentViewModel>(new { UserName = username });
+        }
+        public void GotoLogin()
+        {
+            ShowViewModel<LoginViewModel>();
+        }
     }
 }
