@@ -10,7 +10,7 @@ namespace CM.Core.Services
     public interface ITeacherService
     {
         List<TeacherViewModel> SelectListTeacher(TeacherViewModel ObjectSearch);
-        TeacherViewModel SelectTeacherByKey(decimal? id);
+        Task<Teachers> SelectTeacherByKey(decimal? id);
 
         Task<IEnumerable<Teachers>> GetTeachers();
     }

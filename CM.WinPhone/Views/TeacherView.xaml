@@ -14,48 +14,34 @@
                     SupportedOrientations="Portrait"
                     shell:SystemTray.IsVisible="True"
                     mc:Ignorable="d">
-    <views:MvxPhonePage.Resources>
+     <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="/Assets/bg1.jpg" ></ImageBrush>
 
-        <DataTemplate x:Key="templateTeachers">
-            <Grid Margin="6">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="100" />
-                    <ColumnDefinition Width="*" />
-                </Grid.ColumnDefinitions>
-                <Image Grid.Column="0" Source="{Binding ImagePath}" />
-                <StackPanel Grid.Column="1" Margin="12">
-                    <TextBox FontSize="40" Text="{Binding Fullname, Mode=OneWay}" />
-                    <TextBox FontSize="24" Text="{Binding Email, Mode=OneWay}" />
-                    <TextBox FontSize="24" Text="{Binding Subject, Mode=OneWay}" />
-                    <TextBox FontSize="24" Text="{Binding PhoneNumber, Mode=OneWay}" />
-                    <TextBox FontSize="24" Text="{Binding Description, Mode=OneWay}" />
-                </StackPanel>
-            </Grid>
-
-        </DataTemplate>
-    </views:MvxPhonePage.Resources>
-    <!--LayoutRoot is the root grid where all page content is placed-->
-    <Grid x:Name="LayoutRoot"  Background="Transparent">
+        </Grid.Background>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-
+        <ListBox x:Name="teacherListBox"
+                     Grid.Row="1"
+                     ItemsSource="{Binding ViewCV}" />
         <!--TitlePanel contains the name of the application and page title-->
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="Chose Teacher" TextAlignment="Center"   FontSize="30" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="Teacher CV" TextAlignment="Left" FontSize="30" Style="{StaticResource PhoneTextTitle2Style}" Foreground="#FF54EFDE" FontWeight="Bold"/>
         </StackPanel>
-        
-       
+
         <!--ContentPanel - place additional content here-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <ListBox x:Name="teacherListBox"
-                     Grid.Row="1"
-                     
-                     ItemTemplate="{StaticResource templateTeachers}"
-                     ItemsSource="{Binding ListData}" />
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="5,2,19,-2">
+            <Image Source="{Binding ImagePath}" HorizontalAlignment="Left" Height="125" Margin="18,10,0,0" VerticalAlignment="Top" Width="125"/>
+            <TextBlock Text="{Binding FullName}" HorizontalAlignment="Left" Margin="175,68,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource PhoneTextAccentStyle}" Width="270" Height="32"/>
+            <TextBlock Text="{Binding Email}" HorizontalAlignment="Left" Height="35" Margin="15,168,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="425"/>
+            <TextBlock Text="{Binding PhoneNumber}" HorizontalAlignment="Left" Height="35" Margin="15,243,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="420"/>
+            <TextBlock Text="{Binding Subject}" HorizontalAlignment="Left" Height="35" Margin="20,328,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="420"/>
+            <TextBlock Text="{Binding Description}" HorizontalAlignment="Left" Height="35" Margin="20,413,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="420"/>
+
         </Grid>
-        
     </Grid>
     
     <phone:PhoneApplicationPage.ApplicationBar>
